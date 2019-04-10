@@ -1,0 +1,25 @@
+clear all; close all;
+%Undamped 
+M=2;
+J=2;
+k=2;
+b=0;
+
+tfinal=15;
+dt=.1;
+timespan=linspace(1,tfinal,tfinal/dt);
+
+
+%Run simulation 
+sim('Problem2')
+
+%Figure 
+figure
+plot(timespan,x)
+grid on
+title('Undamped System')
+xlabel('Time(Sec)')
+ylabel('Position')
+legend('b=0, J=2, k=2','location','southeast')
+
+    
