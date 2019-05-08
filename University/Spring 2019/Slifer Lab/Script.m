@@ -18,17 +18,17 @@ Heater_Off_On_Data=xlsread('Cooldown Data','Heater Off On');
     
     figure
     hold on
-    title('Heater Equilibrating')
+    title('Heater Equilibrating','FontSize',16)
     yyaxis left
     plot(Time_Heater_Equilibrating,Temperature_Heater_Equilibrating,'b');
     plot(Time_Heater_Equilibrating,Set_Temp_Heater_Equilibrating,'k--')
-    ylabel('Temperature (K)')
+    ylabel('Temperature (K)','FontSize',16)
     ylim([60,110]);
     yyaxis right
     plot(Time_Heater_Equilibrating,Voltage_Heater_Equilibrating,'r');
-    ylabel('Voltage')
+    ylabel('Voltage','FontSize',16)
     legend({'Temperature (K)','Heater Set Temperature (K)','Voltage'},'Fontsize',10,'Location','east')
-    xlabel('Time (Sec)')    
+    xlabel('Time (Sec)','FontSize',16)    
     ylim([25,50]);
     xlim([0,190]);
     hold off
@@ -40,16 +40,16 @@ Heater_Off_On_Data=xlsread('Cooldown Data','Heater Off On');
     
     figure
     hold on
-    title('Heater Turning off')
+    title('Heater Turning off','FontSize',16)
     yyaxis left
     plot(Time_Heater_Turning_off,Temperature_Heater_Turning_off,'b');
-    ylabel('Temperature (K)')
+    ylabel('Temperature (K)','FontSize',16)
     ylim([100,115]);
     yyaxis right
     plot(Time_Heater_Turning_off,Voltage_Heater_Turning_off,'r');
-    ylabel('Voltage')
+    ylabel('Voltage','FontSize',16)
     legend({'Temperature (K)','Voltage'},'Fontsize',10,'Location','northeast')
-    xlabel('Time (Sec)')    
+    xlabel('Time (Sec)','FontSize',16)    
     ylim([0,14]);
     xlim([0,165]);
     hold off
@@ -61,16 +61,16 @@ Heater_Off_On_Data=xlsread('Cooldown Data','Heater Off On');
     
     figure
     hold on
-    title('Heater Turning on')
+    title('Heater Turning on','FontSize',16)
     yyaxis left
     plot(Time_Heater_Turning_on,Temperature_Heater_Turning_on,'b');
-    ylabel('Temperature (K)')
+    ylabel('Temperature (K)','FontSize',16)
     ylim([90,100]);
     yyaxis right
     plot(Time_Heater_Turning_on,Voltage_Heater_Turning_on,'r');
     ylabel('Voltage')
     legend({'Temperature (K)','Voltage'},'Fontsize',10,'Location','north')
-    xlabel('Time (Sec)')    
+    xlabel('Time (Sec)','FontSize',16)    
     ylim([0,14]);
     xlim([0,60]);
     hold off
@@ -82,16 +82,16 @@ Heater_Off_On_Data=xlsread('Cooldown Data','Heater Off On');
     
     figure
     hold on
-    title('Heater Off On Cycle')
+    title('Heater Off On Cycle','FontSize',16)
     yyaxis left
     plot(Time_Heater_Off_On,Temperature_Heater_Off_On,'b');
-    ylabel('Temperature (K)')
+    ylabel('Temperature (K)','FontSize',16)
     ylim([90,115]);
     yyaxis right
     plot(Time_Heater_Off_On,Voltage_Heater_Off_On,'r');
-    ylabel('Voltage')
+    ylabel('Voltage','FontSize',16)
     legend({'Temperature (K)','Voltage'},'Fontsize',10,'Location','north')
-    xlabel('Time (Sec)')    
+    xlabel('Time (Sec)','FontSize',16)    
     ylim([0,15]);
     xlim([0,225]);
     hold off
@@ -111,10 +111,10 @@ resistance = data(:,2);
 
 figure 
 hold on 
-title('Calibration Curve of Allen Bradley #15')
+title('Calibration Curve of Allen Bradley #15','FontSize',16)
 plot(resistance,temperature); 
-ylabel('Temperature (K)')
-xlabel('Resistance (Ohm)')
+ylabel('Temperature (K)','FontSize',16)
+xlabel('Resistance (Ohm)','FontSize',16)
 plot(129.04,293.15,'r*');
 plot(160.226,77.00,'b*'); 
 plot(857,4,'k*');
